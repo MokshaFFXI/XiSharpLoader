@@ -9,6 +9,8 @@ namespace XiSharpLoader.Extensions
     {
         public static PolLanguage ToPolLanguage(this string input)
         {
+            input = input.Trim();
+
             if (string.Equals(input, "JP", StringComparison.OrdinalIgnoreCase)
                || string.Equals(input, "0", StringComparison.OrdinalIgnoreCase))
             {

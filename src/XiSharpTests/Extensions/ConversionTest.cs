@@ -8,6 +8,9 @@ namespace XiSharpLoaderTests.Extensions
     {
         [Theory]
         [InlineData("0", PolLanguage.Japanese)]
+        [InlineData(" 0", PolLanguage.Japanese)]
+        [InlineData("0 ", PolLanguage.Japanese)]
+        [InlineData(" 0 ", PolLanguage.Japanese)]
         [InlineData("jp", PolLanguage.Japanese)]
         [InlineData("Jp", PolLanguage.Japanese)]
         [InlineData("JP", PolLanguage.Japanese)]
